@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #273c75;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 95%;
+  height: 100vh;
+  max-width: 1150px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background-color: #ffff33;
+  padding: 20px;
+  border-radius: 7px;
+  width: 90%;
+  max-width: 635px;
+  font-size: 1.3rem;
+  user-select: none;
+  color: #000;
+}
+
+.form__question {
+  margin: 0px 0px 15px 0px;
+}
+
+.form__choice {
+  background-color: #fff;
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.form__choice+.form__choice {
+  margin-top: 10px;
+}
+
+.form__choice:hover,
+.form__choice--active {
+  border: 2px solid #273c75;
+}
+
+.form__choice:hover>.form__choice__radio-button,
+.form__choice--active>.form__choice__radio-button {
+  background: #273c75;
+}
+
+.form__choice:hover>.form__choice__radio-button::before,
+.form__choice--active>.form__choice__radio-button::before {
+  border: 2px solid #273c75;
+}
+
+.form__choice__radio-button {
+  width: 16px;
+  height: 16px;
+  background: #FC427B;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.form__choice__radio-button::before {
+  content: '';
+  width: 22px;
+  height: 22px;
+  border: 2px solid #FC427B;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form__choice__text {
+  margin: 0px 0px 0px 30px;
+  display: inline-block;
+}
+
+.form__button {
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  display: block;
+  margin: 14px auto 0px;
+  border-radius: 5px;
+  border: 2px solid #273c75;
+  cursor: pointer;
+  background-color: #fff;
+}
