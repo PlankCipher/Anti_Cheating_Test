@@ -4,12 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="CSS/index.css">
 
   <title>Anti Cheating Test</title>
 </head>
 
 <body>
+  <div class="message-overlay">
+    <div class="message-box">
+      <i class="far fa-times-circle message-box__close-icon"></i>
+      <p class="message-box__text" id="messageText"></p>
+    </div>
+  </div>
   <div class="container">
     <div class="form">
       <p class="form__question">Which editor do you use?</p>
@@ -34,6 +40,9 @@
       </form>
     </div>
   </div>
+
+  <script src="https://kit.fontawesome.com/a467a599ad.js" crossorigin="anonymous"></script>
+  <script src="JS/index.js"></script>
 </body>
 
 </html>
