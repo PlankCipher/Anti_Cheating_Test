@@ -2,15 +2,21 @@
 <html lang="en">
 
 <head>
+  <!-- Meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anti Cheating Tests/Quizes Website Demo. Written only with HTML, CSS and JS">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="CSS/index.css">
 
   <title>Anti Cheating Test</title>
 </head>
 
 <body>
+  <!-- Overlay behind popup message -->
   <div class="message-overlay" id="messageOverlay">
+    <!-- Actual message box -->
     <div class="message-box">
       <i class="far fa-times-circle message-box__close-icon" id="messageBoxCloseIcon"></i>
       <p class="message-box__text" id="messageBoxText">
@@ -20,45 +26,59 @@
       </p>
     </div>
   </div>
+
   <div class="container">
+    <!-- Outer container of the question form -->
     <div class="form" id="form">
+      <!-- Counter (used by anti-cheating script) -->
       <div class="counter" id="counter">5</div>
+      <!-- Question text -->
       <p class="form__question">Which editor do you use?</p>
+      <!-- Answers (choices) form -->
       <form>
-        <div class="form__choice" id="formChoice">
+        <!-- Single choice -->
+        <div class="form__choice">
+          <!-- The marker before choice text -->
           <span class="form__choice__radio-button">
             <i class="far fa-circle form__choice__radio-button__outer"></i>
             <i class="fas fa-circle form__choice__radio-button__inner"></i>
           </span>
+          <!-- Actual choice text -->
           <p class="form__choice__text">VS Code</p>
         </div>
-        <div class="form__choice" id="formChoice">
+
+        <div class="form__choice">
           <span class="form__choice__radio-button">
             <i class="far fa-circle form__choice__radio-button__outer"></i>
             <i class="fas fa-circle form__choice__radio-button__inner"></i>
           </span>
           <p class="form__choice__text">Sublime Text</p>
         </div>
-        <div class="form__choice" id="formChoice">
+
+        <div class="form__choice">
           <span class="form__choice__radio-button">
             <i class="far fa-circle form__choice__radio-button__outer"></i>
             <i class="fas fa-circle form__choice__radio-button__inner"></i>
           </span>
           <p class="form__choice__text">Atom</p>
         </div>
-        <div class="form__choice" id="formChoice">
+
+        <div class="form__choice">
           <span class="form__choice__radio-button">
             <i class="far fa-circle form__choice__radio-button__outer"></i>
             <i class="fas fa-circle form__choice__radio-button__inner"></i>
           </span>
           <p class="form__choice__text">Notepad++</p>
         </div>
+
         <button type="button" class="form__button" id="formButton">Submit</button>
       </form>
     </div>
+    <!-- A button used by the anti-cheating script -->
     <button class="anti-cheating-button" id="antiCheatingBtn">HOLD ME DOWN</button>
   </div>
 
+  <!-- Requesting Font Awesome and my JavaScript file -->
   <script src="https://kit.fontawesome.com/a467a599ad.js" crossorigin="anonymous"></script>
   <script src="JS/index.js"></script>
 </body>

@@ -1,5 +1,17 @@
+/********** General Styling **********/
 * {
   box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+  height: 100vh;
+  max-width: 1150px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 body {
@@ -10,6 +22,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/********** Message **********/
 .message-overlay {
   background-color: rgba(0, 0, 0, 1);
   position: fixed;
@@ -43,17 +56,6 @@ body {
   cursor: pointer;
 }
 
-.container {
-  width: 95%;
-  height: 100vh;
-  max-width: 1150px;
-  margin: 0px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .counter {
   border: 3px solid #FC427B;
   width: 50px;
@@ -69,6 +71,7 @@ body {
   border-radius: 50%;
 }
 
+/********** Questions Form **********/
 .form {
   background-color: #ffff33;
   padding: 20px;
@@ -110,6 +113,7 @@ body {
   color: #273c75;
 }
 
+/********** The marker before text of every choice **********/
 .form__choice__radio-button {
   color: #FC427B;
   position: absolute;
@@ -119,6 +123,7 @@ body {
   height: 1.5rem;
 }
 
+/********** The inner dot of the marker **********/
 .form__choice__radio-button__inner {
   font-size: 0.8rem;
   position: absolute;
@@ -127,6 +132,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
+/********** The outer circle of the marker **********/
 .form__choice__radio-button__outer {
   font-size: 1.4rem;
   position: absolute;
@@ -151,6 +157,7 @@ body {
   background-color: #fff;
 }
 
+/********** The button clicked by user to reset counter **********/
 .anti-cheating-button {
   width: 90%;
   max-width: 635px;
@@ -164,6 +171,7 @@ body {
   background-color: #fff;
 }
 
+/********** A media query to add little margin for the body in small screens **********/
 @media only screen and (max-height: 585px) {
   body {
     margin: 50px 0px;
