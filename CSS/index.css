@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: 0px;
+  margin: 20px 0px 0px 0px;
   padding: 0px;
   background-color: #273c75;
   color: #fff;
@@ -51,6 +51,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.counter {
+  border: 3px solid #FC427B;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.5rem;
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  border-radius: 50%;
+  display: none;
 }
 
 .form {
@@ -62,6 +79,7 @@ body {
   font-size: 1.3rem;
   user-select: none;
   color: #000;
+  position: relative;
 }
 
 .form__question {
@@ -86,34 +104,32 @@ body {
   border: 2px solid #273c75;
 }
 
-.form__choice:hover>.form__choice__radio-button,
-.form__choice--active>.form__choice__radio-button {
-  background: #273c75;
-}
-
-.form__choice:hover>.form__choice__radio-button::before,
-.form__choice--active>.form__choice__radio-button::before {
-  border: 2px solid #273c75;
+.form__choice:hover .form__choice__radio-button__inner,
+.form__choice--active .form__choice__radio-button__inner,
+.form__choice:hover .form__choice__radio-button__outer,
+.form__choice--active .form__choice__radio-button__outer {
+  color: #273c75;
 }
 
 .form__choice__radio-button {
-  width: 16px;
-  height: 16px;
-  background: #FC427B;
-  display: inline-block;
+  color: #FC427B;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
-.form__choice__radio-button::before {
-  content: '';
-  width: 23px;
-  height: 22px;
-  border: 2px solid #FC427B;
-  border-radius: 50%;
-  display: block;
+.form__choice__radio-button__inner {
+  font-size: 0.8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form__choice__radio-button__outer {
+  font-size: 1.4rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -132,6 +148,19 @@ body {
   margin: 14px auto 0px;
   border-radius: 5px;
   border: 2px solid #273c75;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.anti-cheating-button {
+  width: 90%;
+  max-width: 635px;
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  display: block;
+  margin: 14px auto 0px;
+  border-radius: 5px;
+  border: 3px solid #FC427B;
   cursor: pointer;
   background-color: #fff;
 }
