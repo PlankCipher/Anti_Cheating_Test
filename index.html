@@ -10,46 +10,50 @@
 </head>
 
 <body>
-  <div class="message-overlay">
+  <div class="message-overlay" id="messageOverlay">
     <div class="message-box">
-      <i class="far fa-times-circle message-box__close-icon"></i>
-      <p class="message-box__text" id="messageText"></p>
+      <i class="far fa-times-circle message-box__close-icon" id="messageBoxCloseIcon"></i>
+      <p class="message-box__text" id="messageBoxText">
+        You have to hold down (or keep clicking in case of touch devices) the button at the bottom of the form to
+        indicate you are not using any other programs. If a counter appears on top of the form, it means you have that
+        number of seconds till considered cheating, hold (or click) the button to reset the counter.
+      </p>
     </div>
   </div>
   <div class="container">
-    <div class="form">
-      <div class="counter">5</div>
+    <div class="form" id="form">
+      <div class="counter" id="counter">5</div>
       <p class="form__question">Which editor do you use?</p>
       <form>
-        <div class="form__choice">
+        <div class="form__choice" id="formChoice">
           <span class="form__choice__radio-button">
             <i class="far fa-circle form__choice__radio-button__outer"></i>
             <i class="fas fa-circle form__choice__radio-button__inner"></i>
           </span>
           <p class="form__choice__text">VS Code</p>
         </div>
-        <div class="form__choice">
+        <div class="form__choice" id="formChoice">
           <span class="form__choice__radio-button">
             <i class="far fa-circle form__choice__radio-button__outer"></i>
             <i class="fas fa-circle form__choice__radio-button__inner"></i>
           </span>
           <p class="form__choice__text">Sublime Text</p>
         </div>
-        <div class="form__choice">
+        <div class="form__choice" id="formChoice">
           <span class="form__choice__radio-button">
             <i class="far fa-circle form__choice__radio-button__outer"></i>
             <i class="fas fa-circle form__choice__radio-button__inner"></i>
           </span>
           <p class="form__choice__text">Atom</p>
         </div>
-        <div class="form__choice">
+        <div class="form__choice" id="formChoice">
           <span class="form__choice__radio-button">
             <i class="far fa-circle form__choice__radio-button__outer"></i>
             <i class="fas fa-circle form__choice__radio-button__inner"></i>
           </span>
           <p class="form__choice__text">Notepad++</p>
         </div>
-        <button type="button" class="form__button">Submit</button>
+        <button type="button" class="form__button" id="formButton">Submit</button>
       </form>
     </div>
     <button class="anti-cheating-button" id="antiCheatingBtn">HOLD ME DOWN</button>
