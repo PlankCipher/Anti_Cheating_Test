@@ -3,15 +3,9 @@
   box-sizing: border-box;
 }
 
-.container {
-  width: 95%;
-  height: 100vh;
-  max-width: 1150px;
-  margin: 0px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+html,
+body {
+  height: 100%;
 }
 
 body {
@@ -20,6 +14,20 @@ body {
   background-color: #273c75;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 95%;
+  max-width: 1150px;
+  margin: 75px 0px 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1 0 auto;
 }
 
 /********** Message **********/
@@ -171,9 +179,17 @@ body {
   background-color: #fff;
 }
 
-/********** A media query to add little margin for the body in small screens **********/
-@media only screen and (max-height: 585px) {
-  body {
-    margin: 50px 0px;
-  }
+footer {
+  background-color: #508484;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 23px;
+  width: 100%;
 }
+
+/* ********* A media query to add little margin for the body in small screens *********
+@media only screen and (max-height: 585px) {
+  .container {
+    margin-bottom: 40px;
+  }
+} */
