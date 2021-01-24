@@ -1,0 +1,26 @@
+{
+  "name": "anti_cheating_test",
+  "version": "1.0.0",
+  "description": "A piece of JavaScript code to potentially prevent cheating on web based tests or quizzes.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PlankCipher/Anti_Cheating_Test.git"
+  },
+  "author": "PlankCipher",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/PlankCipher/Anti_Cheating_Test/issues"
+  },
+  "homepage": "https://github.com/PlankCipher/Anti_Cheating_Test#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

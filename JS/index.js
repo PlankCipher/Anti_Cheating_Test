@@ -86,9 +86,7 @@
     if (choseOne) {
       stopCounter(5);
       stopAllAntiCheatingEventListeners();
-      showMsg(
-        'Whatever, this is not important. What matters is your code not the editor.😇',
-      );
+      showMsg('Whatever, this is not important. What matters is your code.👍');
     } else {
       showMsg('Well, you have got to choose an answer.');
     }
