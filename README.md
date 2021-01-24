@@ -1,7 +1,7 @@
 # Anti_Cheating_Test
 A piece of JavaScript code to potentially prevent cheating on web based tests or quizes.
 
-**Available at: [http://anti_cheating_test.imfast.io/](http://anti_cheating_test.imfast.io/)**
+**Available at: [https://anti-cheating-test.herokuapp.com](https://anti-cheating-test.herokuapp.com)**
 
 ## How it works
 It depends on using event listeners to detect user activity in the page, and if user is not active for specific amount of time, they are considered cheating.
